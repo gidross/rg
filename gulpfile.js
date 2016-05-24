@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     opn = require('opn'),
     livereload = require('gulp-livereload'),
     useref = require('gulp-useref'),
+    uglify = require('gulp-uglify'),
     gulpif = require('gulp-if'),
     minifyCss = require('gulp-minify-css'),
     rename = require("gulp-rename"),
@@ -59,32 +60,19 @@ gulp.task('cache-clean', function () {
 });
 
 // images
-gulp.task('images', ['dist-clean'], function() {
+gulp.task('images', function() {
     return gulp.src(path.app.img)
         .pipe(gulp.dest(path.dist.img));
 });
 
 // fonts
-gulp.task('fonts', ['dist-clean'], function () {
-    return gulp.src(path.app.fonts)
+gulp.task('copy-bs-fonts', function(){
+    return gulp.src(wiredep.directory + '/bootstrap/fonts/*.*')
         .pipe(gulp.dest(path.dist.fonts));
 });
 
-// fix to hard copy fonts from Bootstrap as they don't include their fonts in their bower.json file
-// gulp.task('copy-bs-fonts', function(){
-//     return gulp.src(wiredep.directory+'/bootstrap/fonts/*.*')
-//         .pipe(gulp.dest(path.dist.fonts));
-// });
-
-// fix to hard copy fonts from font-awesome as they don't include their fonts in their bower.json file
-// gulp.task('copy-fa-fonts', function(){
-//     return gulp.src(wiredep.directory+'/font-awesome/fonts/*.*')
-//         .pipe(gulp.dest(path.dist.fonts));
-// });
-
-
 // build
-gulp.task('build', ['dist-clean', 'images', 'fonts'], function () {
+gulp.task('build', ['images', 'copy-bs-fonts'], function () {
     return gulp.src(path.app.html)
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))

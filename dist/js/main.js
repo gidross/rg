@@ -1,0 +1,1 @@
+$(function(){var n=$(".news"),i=n.find(".news__view"),e=n.find(".news__aside"),c=i.find(".glyphicon-remove_news__view");e.on("click",function(){var n=$(this);n.next(i).fadeIn()}),c.on("click",function(){var n=$(this);n.closest(i).fadeOut()})});
