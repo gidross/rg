@@ -1,0 +1,349 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #000;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+@media (max-width: 479px) {
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12 {
+    float: left;
+  }
+
+  .col-xxs-1 {
+    width: 8.33333%;
+  }
+
+  .col-xxs-2 {
+    width: 16.66667%;
+  }
+
+  .col-xxs-3 {
+    width: 25%;
+  }
+
+  .col-xxs-4 {
+    width: 33.33333%;
+  }
+
+  .col-xxs-5 {
+    width: 41.66667%;
+  }
+
+  .col-xxs-6 {
+    width: 50%;
+  }
+
+  .col-xxs-7 {
+    width: 58.33333%;
+  }
+
+  .col-xxs-8 {
+    width: 66.66667%;
+  }
+
+  .col-xxs-9 {
+    width: 75%;
+  }
+
+  .col-xxs-10 {
+    width: 83.33333%;
+  }
+
+  .col-xxs-11 {
+    width: 91.66667%;
+  }
+
+  .col-xxs-12 {
+    width: 100%;
+  }
+
+  .col-xxs-pull-0 {
+    right: auto;
+  }
+
+  .col-xxs-pull-1 {
+    right: 8.33333%;
+  }
+
+  .col-xxs-pull-2 {
+    right: 16.66667%;
+  }
+
+  .col-xxs-pull-3 {
+    right: 25%;
+  }
+
+  .col-xxs-pull-4 {
+    right: 33.33333%;
+  }
+
+  .col-xxs-pull-5 {
+    right: 41.66667%;
+  }
+
+  .col-xxs-pull-6 {
+    right: 50%;
+  }
+
+  .col-xxs-pull-7 {
+    right: 58.33333%;
+  }
+
+  .col-xxs-pull-8 {
+    right: 66.66667%;
+  }
+
+  .col-xxs-pull-9 {
+    right: 75%;
+  }
+
+  .col-xxs-pull-10 {
+    right: 83.33333%;
+  }
+
+  .col-xxs-pull-11 {
+    right: 91.66667%;
+  }
+
+  .col-xxs-pull-12 {
+    right: 100%;
+  }
+
+  .col-xxs-push-0 {
+    left: auto;
+  }
+
+  .col-xxs-push-1 {
+    left: 8.33333%;
+  }
+
+  .col-xxs-push-2 {
+    left: 16.66667%;
+  }
+
+  .col-xxs-push-3 {
+    left: 25%;
+  }
+
+  .col-xxs-push-4 {
+    left: 33.33333%;
+  }
+
+  .col-xxs-push-5 {
+    left: 41.66667%;
+  }
+
+  .col-xxs-push-6 {
+    left: 50%;
+  }
+
+  .col-xxs-push-7 {
+    left: 58.33333%;
+  }
+
+  .col-xxs-push-8 {
+    left: 66.66667%;
+  }
+
+  .col-xxs-push-9 {
+    left: 75%;
+  }
+
+  .col-xxs-push-10 {
+    left: 83.33333%;
+  }
+
+  .col-xxs-push-11 {
+    left: 91.66667%;
+  }
+
+  .col-xxs-push-12 {
+    left: 100%;
+  }
+
+  .col-xxs-offset-0 {
+    margin-left: 0%;
+  }
+
+  .col-xxs-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  .col-xxs-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  .col-xxs-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-xxs-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  .col-xxs-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  .col-xxs-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-xxs-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  .col-xxs-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  .col-xxs-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-xxs-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  .col-xxs-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  .col-xxs-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .visible-xxs {
+    display: block;
+  }
+}
+@media (min-width: 480px) {
+  .visible-xxs {
+    display: none;
+  }
+}
+.container {
+  padding-top: 15px;
+}
+
+.news {
+  margin-bottom: 15px;
+  position: relative;
+}
+.news__heading {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.news__preview {
+  position: relative;
+  cursor: pointer;
+}
+.news__image {
+  width: 100%;
+}
+.news__aside {
+  color: #528CC1;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+}
+.news__aside:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 35px;
+  z-index: 1;
+  width: 40px;
+}
+.news__view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 62px 15px 44px 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.time {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11px;
+  color: #666666;
+}
+.time_news {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #5E6F7A;
+  color: #ffffff;
+}
+.time_news__view {
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+}
+
+.glyphicon-camera_news {
+  font-size: 150%;
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  top: auto;
+}
+
+.glyphicon-file_news {
+  font-size: 230%;
+  color: #CCCCCC;
+  vertical-align: middle;
+}
+.glyphicon-file_news__view {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.glyphicon-remove {
+  cursor: pointer;
+}
+.glyphicon-remove_news__view {
+  position: absolute;
+  top: auto;
+  bottom: 15px;
+  left: 15px;
+}
+
+.link_news__view {
+  font-weight: bold;
+}
+.link_heading {
+  color: #000;
+}
+.link_heading:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.status {
+  font-size: 12px;
+  display: inline-block;
+}
+.status_news__view {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

@@ -1,0 +1,40 @@
+.news
+  margin-bottom: 15px
+  position: relative
+  &__heading
+    font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif
+  &__preview
+    position: relative
+    cursor: pointer
+  &__image
+    width: 100%
+  &__aside
+    color: #528CC1
+    height: 35px
+    overflow: hidden
+    white-space: nowrap
+    position: relative
+    cursor: pointer
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+      height: 35px
+      z-index: 1
+      width: 40px
+  &__view
+    position: absolute
+    left: 0
+    top: 0
+    padding: 62px 15px 44px 15px
+    background-color: #ffffff
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+    width: 100%
+    height: 100%
+    overflow: hidden
+    display: none
+
+
+
