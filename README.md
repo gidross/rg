@@ -1,4 +1,4 @@
-# RG TZ landing page
+# RG TZ
 
 # Prerequirements:
 * nodejs/npm (https://nodejs.org/)
